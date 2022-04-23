@@ -14,7 +14,8 @@ class StoreFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->words(3, true),
+            'description' => $this->faker->sentence
         ];
     }
 }
